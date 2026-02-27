@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 feedback.style.color="red"
             }
             else{
-                const hint=userGuess<target ? "lower" : "higher"
+                const hint=userGuess<target ? "higher" : "lower"
                 feedback.textContent=`${hint} try again`
                 feedback.style.color="#f39c12"
             }
