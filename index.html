@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess The Number</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:#ffffff;
+    width:380px;
+    padding:40px 30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h1{
+    margin-bottom:10px;
+    font-size:28px;
+    color:#333;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+.input-group{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+input{
+    flex:1;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#007bff;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:6px;
+    background:#007bff;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.new-game{
+    margin-top:20px;
+    width:100%;
+}
+.attempt{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>Guess the Number</h1>
+    <p>I'm thinking of a number between 1 and 100</p>
+
+    <div class="input-group">
+        <input id="input" type="number" placeholder="Enter the guess">
+        <button id="Submit">Submit</button>
+        
+    </div>
+<button class="new-game" id="new-game">New Game</button>
+
+    <div class="feedback" id="feedback"></div>
+    <div class="attempt" id="attempt"></div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
